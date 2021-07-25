@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import './App.css'
+
 export function Elemental() {
   const perkl_hohoemi = 0.68
   const perkl_elemental = 1.04
@@ -19,6 +21,8 @@ export function Elemental() {
 
   return (
     <div className="container">
+
+      <h1 className="container">エレンタールPとほほえみのカロリー換算</h1>
       <div className="row">
         <div className="column">
           <label className="" id="">エレンタール</label>
@@ -44,7 +48,7 @@ export function Elemental() {
       <div className="row">
         <div className="column">
           <button id="clear"
-          onClick={(e) => { clear() }}
+            onClick={(e) => { clear() }}
           >
             数値クリア</button>
         </div>
